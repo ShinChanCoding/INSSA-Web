@@ -31,8 +31,8 @@ const avatarImg = document.getElementById("avatar");
 // 생략한 뒤 리터럴 템플릿으로 파일 이름에 난수 생성 변수를 작성
 
 function changeHumanImageHandler() {
-    animalImg.src = null;
-    avatarImg.src = null;
+    animalImg.src = "";
+    avatarImg.src = "";
     const randomHuman = humanImagesArray[Math.floor(Math.random() * humanImagesArray.length)];
     humanImg.src = `../image/${randomHuman}`;
 }
@@ -53,8 +53,8 @@ humanRandomButton.addEventListener("click", changeHumanImageHandler);
 // 이미지의.src 는 " 를 제외한 경로로 작성하게 되므로, 
 // 생략한 뒤 리터럴 템플릿으로 파일 이름에 난수 생성 변수를 작성
 function changeAnimalImageHandler() {
-    humanImg.src = null;
-    avatarImg.src = null;
+    humanImg.src = "";
+    avatarImg.src = "";
     const randomAnimal = animalImagesArray[Math.floor(Math.random() * animalImagesArray.length)];
     animalImg.src = `../image/${randomAnimal}`;
 }
@@ -78,8 +78,8 @@ animalRandomButton.addEventListener("click", changeAnimalImageHandler);
 // 이미지의.src 는 " 를 제외한 경로로 작성하게 되므로, 
 // 생략한 뒤 리터럴 템플릿으로 파일 이름에 난수 생성 변수를 작성
 function changeAvatarImageHandler() {
-    humanImg.src = null;
-    animalImg.src = null;
+    humanImg.src = "";
+    animalImg.src = "";
     const randomAvatar = avatarImagesArray[Math.floor(Math.random() * avatarImagesArray.length)];
     avatarImg.src = `../image/${randomAvatar}`;
 }
