@@ -5,6 +5,16 @@
     gap: 10px;
 }
 
+body {
+    background-color: rgb(102, 101, 101);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
 .background-box {
     grid-row: 2 / span 6;
     grid-column: 5 / span 3;
@@ -13,19 +23,24 @@
     padding: 10px;
 }
 
-.upload-box {
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-row: 9 / span 6;
     grid-column: 5 / span 3;
-    border: 2px dotted blue;
+    border: 2px dotted black;
     text-align: center;
     padding: 10px;
 }
 
-.upload-btn {
-    grid-column: 6 / span 1;
+
+.image button {
+    grid-column: 6;
     grid-row: 15;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #42a3ff;
     color: white;
     border: none;
     text-align: center;
@@ -33,6 +48,66 @@
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+.image button:active {
+    box-shadow: 0px 0px 0px 0px #216aae;
+    transform: translateY(5px);
+}
+
+.image button input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#displayImage img {
+    max-height: 100%;
+    width: auto;
+    border-radius: 5px;
+    z-index: 1;
+
+}
+
+.image-cont {
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 90%;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#resultImage .image-cont {
+    padding: 0px;
+    width: fit-content;
+    background-image: url("https://thumbs.dreamstime.com/b/transparent-designer-must-have-fake-background-39672616.jpg");
+    background-size: contain;
+}
+
+#resultImage .image-after {
+    max-height: 100%;
+    width: auto;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#resultImage .image-before {
+    max-width: 20%;
+    height: auto;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
 }
 
 .save-btn {
@@ -129,6 +204,66 @@
 
 }
 
+
+.loader {
+    --ballcolor: #f2f2f2;
+    --shadow: 0px 0 #ffffff00;
+    --shadowcolor: #ffffff00;
+    width: 10px;
+    height: 10px;
+    left: -120px;
+    border-radius: 50%;
+    position: relative;
+    color: var(--ballcolor);
+    animation: shadowRolling 2s linear infinite;
+}
+
+@keyframes shadowRolling {
+    0% {
+        box-shadow: var(--shadow), var(--shadow), var(--shadow), var(--shadow);
+    }
+
+    12% {
+        box-shadow: 100px 0 var(--ballcolor), var(--shadow), var(--shadow),
+            var(--shadow);
+    }
+
+    25% {
+        box-shadow: 110px 0 var(--ballcolor), 100px 0 var(--ballcolor),
+            var(--shadow), var(--shadow);
+    }
+
+    36% {
+        box-shadow: 120px 0 var(--ballcolor), 110px 0 var(--ballcolor),
+            100px 0 var(--ballcolor), var(--shadow);
+    }
+
+    50% {
+        box-shadow: 130px 0 var(--ballcolor), 120px 0 var(--ballcolor),
+            110px 0 var(--ballcolor), 100px 0 var(--ballcolor);
+    }
+
+    62% {
+        box-shadow: 200px 0 var(--shadowcolor), 130px 0 var(--ballcolor),
+            120px 0 var(--ballcolor), 110px 0 var(--ballcolor);
+    }
+
+    75% {
+        box-shadow: 200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor),
+            130px 0 var(--ballcolor), 120px 0 var(--ballcolor);
+    }
+
+    87% {
+        box-shadow: 200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor),
+            200px 0 var(--shadowcolor), 130px 0 var(--ballcolor);
+    }
+
+    100% {
+        box-shadow: 200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor),
+            200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor);
+    }
+}
+
 .button:hover,
 .button1:hover,
 .button2:hover {
@@ -141,4 +276,11 @@
     background-color: #004B6E;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+#addCard,
+#displayCard,
+#loadingCard,
+#downloadCard {
+    display: none;
 }
