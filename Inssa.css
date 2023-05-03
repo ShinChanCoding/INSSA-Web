@@ -132,6 +132,21 @@ body {
     padding: 10px;
 }
 
+.reload-btn {
+    grid-row: 8;
+    grid-column: 9;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    cursor: pointer;
+}
+
 .button {
     grid-row: 4;
     grid-column: 2 / span 2;
@@ -283,4 +298,40 @@ body {
 #loadingCard,
 #downloadCard {
     display: none;
+}
+
+
+/*프로그레스 바 관련 설정*/
+.container {
+    grid-row: 7;
+    grid-column: 9;
+    width: 200px;
+    height: 20px;
+    background: #fbfdff;
+    box-shadow: 0.2rem 0.2rem 0.2rem #d3dae7;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.my-Bar {
+    background: rgba(134, 136, 99, 0.463);
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem #d3dae7;
+    width: 0%;
+}
+
+
+#play {
+    animation: bar 10s forwards;
+}
+
+@keyframes bar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
