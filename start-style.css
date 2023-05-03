@@ -15,11 +15,11 @@ div {
 }
 
 .start-btn {
-    /* position: relative; */
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
     width: 155px;
     height: 63px;
-    /* left: 1000%;
-    top: 90%; */
     margin-left: 1000%;
     margin-top: 510%;
     background: rgba(243, 235, 213, 0.4);
