@@ -16,7 +16,7 @@ body {
 }
 
 .background-box {
-    grid-row: 2 / span 6;
+    grid-row: 2 / span 7;
     grid-column: 5 / span 3;
     border: 2px solid black;
     text-align: center;
@@ -132,6 +132,30 @@ body {
     border: 2px solid black;
     text-align: center;
     padding: 10px;
+}
+@media (max-width: 1024px) {
+  .result-box {
+    display: grid;
+    grid-row: 23 / span 35;
+    grid-column: 5 / span 3;
+  }
+  .background-box{
+    width: 80vw;
+  }
+  
+}
+/* 모바일 미디어에 대한 스타일 */
+@media (max-width: 767px) {
+  .result-box {
+    display: grid;
+    grid-row: 23 / span 35;
+    grid-column: 5 / span 3;
+  }
+  .background-box{
+    width: 80vw;
+  }
+  
+  
 }
 
 .reload-btn {
