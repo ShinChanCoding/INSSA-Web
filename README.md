@@ -11,7 +11,6 @@
 <br>
 <br>    
 ##H2, 🙌 팀 소개
----
 <br>
 <br>    
 [이은엽](https://github.com/ShinChanCoding)
@@ -27,7 +26,7 @@
 <br>
 <br> 
 
-    <strong>1. 홈페이지 grid 나누고 위치 설정 - 완성</strong>
+    <strong>1. 홈페이지 grid 나누고 위치 설정[]</strong>
     -> 프로그램의 전체적인 틀과 디자인을 잡는 과정
     
 2. Navigation 사용을 통하여 주제에 맞는 배경 사진을 선정할 수 있는 목록 - 배경사진 목록 : 동물, 사람, 아바타, 말풍선 효과 등등.. (API 연결 가능성) - 완성
