@@ -11,6 +11,8 @@
 <br>
 <br>    
 ## 🙌🏻 팀 소개
+<br>
+<br>    
 [이은엽](https://github.com/ShinChanCoding)
 <br>
 [임예지](https://github.com/yj5768)        
