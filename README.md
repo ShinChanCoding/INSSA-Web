@@ -1,7 +1,7 @@
 # INSSA-Web
 
 <div align=center>
-    <img width="750" src="img/new-img.png">
+    <img width="750" src="/banner.png">
     <h2> 어.. 엄마 나 완전 인싸지..!!😢 </h2>
 
 ## 💁🏻 서비스 소개
