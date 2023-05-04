@@ -259,6 +259,40 @@ body {
     justify-content: center;
     align-items: center;
 }
+/*태블릿 미디어에 대한 스타일 */
+  @media (max-width: 1024px) {
+    .result-box {
+      display: grid;
+      grid-row: 23 / span 35;
+      grid-column: 5 / span 3;
+      margin-left: 15vw;
+    }
+    .background-box{
+      width: 80vw;
+      margin-left: 15vw;
+    }
+    .image{
+        width: 80vw;
+        margin-left: 15vw;
+    }
+    
+  }
+  /* 모바일 미디어에 대한 스타일 */
+  @media (max-width: 767px) {
+    .result-box {
+      display: grid;
+      grid-row: 23 / span 35;
+      grid-column: 5 / span 3;
+      margin-left: 10vw;
+    }
+    .background-box{
+      width: 80vw;
+      margin-left: 5vw;
+    }
+    .image{
+        width: 80vw;
+        margin-left: 15vw;
+    }}
 
 .result-box .manipulImg {
     height: 100%;
