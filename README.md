@@ -104,9 +104,10 @@ position값을 활용과 함께 eventListener와 함수 수정을 통해 해결�
 <h3>[정주영]</h3>
 <br>
 :heavy_check_mark: <strong>역할</strong><br>
-이미지 누끼 API 활용<br>
+이미지 업로드 버튼생성 및  뷰포트를 사용한 반응형 <br>
 <br>
 :heavy_check_mark: <strong>개발 Issue</strong><br>
+완벽한 환경을 구축하는데 어려움을 느꼇습니다 CSS 또한 중요하다 생각했습니다.
 <br>
 <br>
 
