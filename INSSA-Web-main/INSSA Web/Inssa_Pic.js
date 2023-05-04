@@ -14,7 +14,7 @@
 ///////////////////////
 
 // 먼저 image 들을 담아줄 array 를 생성
-const humanImagesArray = ["human_jp1.jpg", "human_jp2.jpg", "human_jp3.jpg", "human_jp4.jpg", "human_jp5.jpg", "human_jp6.jpg"];
+const humanImagesArray = ["human_jp1.jpg", "human_jp2.jpg", "human_jp3.jpg", "human_jp4.jpg", "human_jp5.jpg", "human_jp6.jpg", "human_jp7.avif];
 const animalImagesArray = ["animal_jp1.jpg", "animal_jp2.jpg", "animal_jp3.jpg", "animal_jp4.jpg"];
 const avatarImagesArray = ["avatar_jp1.jpg", "avatar_jp2.jpg", "avatar_jp3.jpg", "avatar_jp4.jpg"];
 const humanRandomButton = document.getElementById("button");
