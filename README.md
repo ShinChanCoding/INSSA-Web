@@ -43,6 +43,8 @@
 <details>
 <summary>## 🤔 개발 Issue  </summary>
 <div markdown="1">
+    ![image](https://user-images.githubusercontent.com/87774238/236095363-0424478f-6fdf-4b34-96ff-6afb2d544cd4.png)
+
 
 
 <br>
@@ -59,11 +61,10 @@
 ## ❗ 느낀 점
 <br>
 <br> 
-[이은엽]
+[이은엽] 
 <br>
 [임예지] 변수 정리를 꼭 하자      
 <br>
 [정경연]          
 <br>
 [정주영]
-456
