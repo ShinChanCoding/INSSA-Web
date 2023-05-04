@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('\시작 페이지시작페이지2 (1).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+}
+
+
+div {
+    margin: 0;
+}
+
+.start-btn {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 155px;
+    height: 63px;
+    margin-left: 1000%;
+    margin-top: 510%;
+    background: rgba(243, 235, 213, 0.4);
+    box-shadow: 4px 7px 7px rgba(0, 0, 0, 0.25), -10px -10px 9px rgba(255, 255, 255, 0.25);
+    border-radius: 49px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.start-btn:hover {
+    background-color: rgba(255, 255, 255, 0.559);
+}
+
+.logo {
+    position: absolute;
+    width: 188px;
+    height: 30px;
+    left: 66px;
+    top: 60px;
+}
