@@ -70,9 +70,10 @@
 <h3>[이은엽]</h3>
 <br>
 :heavy_check_mark: <strong>역할</strong><br>
-
+- API 값을 가져와서 불러온 이미지의 배경을 제거하고 background-box의 이미지와 합쳐 새로운 이미지를 생성하도록 구현
+- 버튼을 클릭하였을 때 결과 이미지가 도출되도록 구현
 :heavy_check_mark: <strong>개발 Issue</strong><br>
-
+- 불러오는 이미지와 back-ground이미지, 결과 이미지가 각각 픽셀이 달라 홈페이지의 크기가 조절이 안되어 사진의 크기를 조정하느라 어려움이 있었고 position값을 통한 relative와 absolute를 사용하여 조절하였습니다.
 <br>
 <br>
 
