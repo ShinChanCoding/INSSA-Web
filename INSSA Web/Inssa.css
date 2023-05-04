@@ -1,0 +1,471 @@
+/* 스타일 수정 부분 표시 */
+:root {
+    --main-color: #6F6F6F;
+    --sub-color: #A5A5A5;
+    --border-radius: 34px;
+}
+
+.logo {
+    position: absolute;
+    width: 188px;
+    height: 40px;
+    left: 66px;
+    top: 60px;
+    object-fit: cover;
+}
+
+body {
+    background-image: url('./img/bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+button {
+    border-radius: var(--border-radius);
+}
+
+button:hover {
+    background-color: black;
+    box-shadow: 4px 7px 7px rgba(0, 0, 0, 0.25), -10px -10px 9px rgba(255, 255, 255, 0.25);
+}
+
+
+#button:hover,
+#button1:hover,
+#button2:hover {
+    transform: translateY(4px);
+    background-color: black;
+}
+
+#addImage button:hover {
+    background-color: black;
+}
+
+#addImage button {
+    border-radius: var(--border-radius);
+}
+
+#startBtn {
+    border-radius: var(--border-radius);
+}
+
+#startBtn:hover {
+    background-color: black;
+}
+
+
+/*프로그레스 바 관련 설정*/
+.container {
+    grid-row: 7;
+    grid-column: 9;
+    width: 200px;
+    height: 20px;
+    background: #fbfdff;
+    box-shadow: 0.2rem 0.2rem 0.2rem #d3dae7;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.my-Bar {
+    background: rgba(0, 0, 0, 0.919);
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem #d3dae7;
+    width: 0%;
+}
+
+
+#play {
+    animation: bar 1s forwards;
+    /*프로그레스 바 10초간 이동(변경 가능)*/
+}
+
+@keyframes bar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/*여기까지 수정, 버튼 스타일도 수정함*/
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    gap: 10px;
+}
+
+body {
+    background-color: rgb(102, 101, 101);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-box {
+    grid-row: 2 / span 6;
+    grid-column: 5 / span 3;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-box .image_bg {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+.image button {
+    padding: 10px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.image button:active {
+    box-shadow: 0px 0px 0px 0px #216aae;
+    transform: translateY(5px);
+}
+
+.image button input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image .display-img {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row: 9 / span 6;
+    grid-column: 5 / span 3;
+    border: 2px dotted black;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.image-cont {
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 90%;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#resultImage {
+    position: relative;
+}
+
+#resultImage .image-cont {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    background-image: url("https://thumbs.dreamstime.com/b/transparent-designer-must-have-fake-background-39672616.jpg");
+    background-size: contain;
+    position: absolute;
+}
+
+#resultImage .image-after {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    z-index: 1;
+    position: absolute;
+
+}
+
+#resultImage .image-before {
+    max-width: 20%;
+    height: auto;
+    border-radius: 5px;
+
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    position: absolute;
+}
+
+.save-btn {
+    grid-column: 12 / span 1;
+    grid-row: 15;
+    padding: 10px;
+    background-color: var(--sub-color);
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.result-box {
+    grid-row: 5 / span 6;
+    grid-column: 11 / span 3;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-box .manipulImg {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.result-box .manipulImg1 {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.button {
+    grid-row: 4;
+    grid-column: 2 / span 2;
+    padding: 10px;
+    background-color: var(--sub-color);
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#button1 {
+    grid-row: 6;
+    grid-column: 2 / span 2;
+    padding: 10px;
+    background-color: var(--sub-color);
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#button2 {
+    grid-row: 8;
+    grid-column: 2 / span 2;
+    padding: 10px;
+    background-color: var(--sub-color);
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button3 {
+    grid-row: 6;
+    grid-column: 9;
+    padding: 5px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.button4 {
+    grid-row: 8;
+    grid-column: 9;
+    padding: 5px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+
+.loader {
+    --ballcolor: #f2f2f2;
+    --shadow: 0px 0 #ffffff00;
+    --shadowcolor: #ffffff00;
+    width: 10px;
+    height: 10px;
+    left: -120px;
+    border-radius: 50%;
+    position: relative;
+    color: var(--ballcolor);
+    animation: shadowRolling 2s linear infinite;
+}
+
+@keyframes shadowRolling {
+    0% {
+        box-shadow: var(--shadow), var(--shadow), var(--shadow), var(--shadow);
+    }
+
+    12% {
+        box-shadow: 100px 0 var(--ballcolor), var(--shadow), var(--shadow),
+            var(--shadow);
+    }
+
+    25% {
+        box-shadow: 110px 0 var(--ballcolor), 100px 0 var(--ballcolor),
+            var(--shadow), var(--shadow);
+    }
+
+    36% {
+        box-shadow: 120px 0 var(--ballcolor), 110px 0 var(--ballcolor),
+            100px 0 var(--ballcolor), var(--shadow);
+    }
+
+    50% {
+        box-shadow: 130px 0 var(--ballcolor), 120px 0 var(--ballcolor),
+            110px 0 var(--ballcolor), 100px 0 var(--ballcolor);
+    }
+
+    62% {
+        box-shadow: 200px 0 var(--shadowcolor), 130px 0 var(--ballcolor),
+            120px 0 var(--ballcolor), 110px 0 var(--ballcolor);
+    }
+
+    75% {
+        box-shadow: 200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor),
+            130px 0 var(--ballcolor), 120px 0 var(--ballcolor);
+    }
+
+    87% {
+        box-shadow: 200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor),
+            200px 0 var(--shadowcolor), 130px 0 var(--ballcolor);
+    }
+
+    100% {
+        box-shadow: 200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor),
+            200px 0 var(--shadowcolor), 200px 0 var(--shadowcolor);
+    }
+}
+
+.button:hover,
+.button1:hover,
+.button2:hover {
+    background-color: #004B6E;
+}
+
+.button:active,
+.button1:active,
+.button2:active {
+    background-color: #004B6E;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#addCard,
+#displayCard,
+#loadingCard,
+#downloadCard {
+    display: none;
+}
+
+/* .container {
+    grid-row: 7;
+    grid-column: 9;
+    width: 200px;
+    height: 20px;
+    background: #fbfdff;
+    box-shadow: 0.2rem 0.2rem 0.2rem #d3dae7;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.my-Bar {
+    background: rgba(134, 136, 99, 0.463);
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem #d3dae7;
+    width: 0%;
+}
+
+
+#play {
+    animation: bar 10s forwards;
+}
+
+@keyframes bar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+} */

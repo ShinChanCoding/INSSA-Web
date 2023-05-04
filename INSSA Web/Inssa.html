@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Page</title>
+    <link rel="stylesheet" href="Inssa.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./img/INSSALOGO.png">
+    </header>
+
+    <div class="grid-container">
+        <button class="button" id="button">Human</button>
+        <button class="button" id="button1">Animal</button>
+        <button class="button" id="button2">Avatar</button>
+
+        <div class="background-box">
+            <!-- <p>Background Image Here</p> -->
+            <!--이미지의 src 경로를 변경해주기 위해 이미지를 변수로 할당해 선언!-->
+            <img class="image_bg" id="image_bg">
+        </div>
+        <!-- Add Image(초기화면) -->
+        <div class="image" id="addImage">
+            <button>
+                <input type="file" name="" id="fileInput" />
+                Upload Image
+            </button>
+        </div>
+        <!-- Image를 가지고 와서 Display 해준다. -->
+        <div class="image" id="displayImage">
+            <div class="image-cont">
+                <img class="display-img" src="" alt="" />
+            </div>
+            <button id="startBtn">start</button>
+        </div>
+        <!-- Image로딩 페이지 -->
+        <div class="image" id="loadingImage">
+            <div class="loader"></div>
+        </div>
+        <!-- 누끼 결과 페이지 -->
+        <div class="image" id="resultImage">
+            <div class="image-cont">
+                <img class="image-before" src="" alt="" />
+                <img class="image-after" src="" alt="" />
+            </div>
+        </div>
+        <button class="button3" id="progress">translate</button>
+        <!--변환 버튼 클릭시 작동하는 프로그레스 바-->
+        <div class='container'>
+            <div class='my-Bar'>
+            </div>
+        </div>
+
+        <button class="button4" onClick='window.location.reload()'>reload page</button>
+        <div class="result-box" id="resultBox">
+            <!-- 결과 이미지 출력란 등을 추가할 수 있습니다. -->
+            <img class="manipulImg" id="manipulImg" />
+            <img class="manipulImg1" id="manipulImg1" />
+        </div>
+
+    </div>
+    <script src="Inssa.js"></script>
+    <script src="Inssa_Pic.js"></script>
+</body>
+
+</html>
