@@ -134,12 +134,4 @@ position값을 활용과 함께 eventListener와 함수 수정을 통해 해결�
 
     
 ## ❗ 느낀 점
-<br>
-<br> 
-[이은엽] 
-<br>
-[임예지] 변수 정리를 꼭 하자      
-<br>
-[정경연]          
-<br>
-[정주영]
+https://github.com/ShinChanCoding/INSSA-Web/wiki
