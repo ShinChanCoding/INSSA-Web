@@ -43,7 +43,7 @@
 <details>
 <summary>## 🤔 개발 Issue  </summary>
 <div markdown="1">
-    ![image](https://user-images.githubusercontent.com/87774238/236095363-0424478f-6fdf-4b34-96ff-6afb2d544cd4.png)
+    
 
 
 
